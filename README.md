@@ -1,2 +1,2 @@
-# typora-flat-theme
-typora 扁平化主题 / typora flat theme
+# typora-theme
+typora 主题 / typora theme
