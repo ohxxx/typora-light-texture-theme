@@ -412,6 +412,10 @@ table tr td:last-child {
     margin-bottom: 0;
 }
 
+table tr td code {
+  color: #c41d7f;
+}
+
 /*******************************************
 *                                          *
 *           OTHER TABLE THINGS             *
