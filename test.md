@@ -24,3 +24,14 @@
 
 ----
 
+<!-- CODE -->
+
+```js
+function xxx() {
+	console.log('xxx')
+}
+
+xxx()
+```
+----
+
