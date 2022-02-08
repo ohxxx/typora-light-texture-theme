@@ -808,7 +808,7 @@ code {
 
 /*******************************************
 *                                          *
-*                CHECKBOXES                *
+*                 CHECKBOX                 *
 *                                          *
 *******************************************/
 .md-task-list-item > input:before,
@@ -830,24 +830,12 @@ input[type="checkbox"]:hover:before {
     background-color: var(--boxes-darker);
 }
 
-.md-task-list-item > input:checked:before,
-.md-task-list-item > input[checked]:before,
-input[type="checkbox"]:checked:before {
-    background-color: var(--primary-color);
-}
-
-.md-task-list-item:hover > input:checked:before,
-.md-task-list-item:hover > input[checked]:before,
-input[type="checkbox"]:hover:checked:before {
-    background-color: var(--primary-color-darker);
-}
-
 .md-task-list-item > input:after,
 .md-task-list-item > input:after,
 input[type="checkbox"]:after {
     transform: rotate(-45deg);
     position: absolute;
-    border: 2px solid white;
+    border: 2px solid var(--primary-color);
     border-top: 0;
     border-right: 0;
     top: 0.16rem;

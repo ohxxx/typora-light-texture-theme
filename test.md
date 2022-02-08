@@ -35,3 +35,9 @@ xxx()
 ```
 ----
 
+<!-- CHECKBOX -->
+
+- [x] XXX
+- [x] YYY
+- [ ] ~~ZZZ~~
+
