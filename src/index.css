@@ -2,7 +2,7 @@
 
 :root {
     --bg-color: white;
-    --side-bar-bg-color: #f5f7f9;
+    --side-bar-bg-color: white;
     --control-text-color: #3b454e;
     --primary-color: #3884ff;
     --primary-btn-border-color: #3884ff;
@@ -705,13 +705,11 @@ table tr td code {
     background-color: var(--bg-color);
     color: var(--text-color);
     width: 15rem;
-    height: 2.5rem;
     bottom: -3rem;
     padding: 0.1875rem;
 }
 
 .md-fences .code-tooltip .ty-input {
-    border: solid 1px var(--borders);
     height: 2rem;
     line-height: 2rem;
     margin: 0rem;
@@ -726,7 +724,7 @@ table tr td code {
 }
 
 .md-fences .code-tooltip .ty-input:focus {
-    border-color: var(--primary-color);
+    border-color: transparent !important;
 }
 
 .html-for-mac .ty-cm-lang-input:empty:after {
@@ -1349,10 +1347,9 @@ body.o #typora-sidebar .ty-search-item-line {
 #typora-sidebar .file-tree-node.active .file-node-background,
 #typora-sidebar .file-list-item.active,
 #typora-sidebar .ty-search-item.active {
-    background-color: white;
-    outline: 1px solid var(--borders);
-    border: none;
+    background-color: var(--borders);
     color: var(--primary-color) !important;
+    border-left: 4px solid var(--primary-color)
 }
 
 #typora-sidebar .file-tree-node.active .file-node-content {
@@ -1410,11 +1407,6 @@ body.o #typora-sidebar .ty-search-item-line {
 #typora-sidebar .ty-search-item-collapse-icon {
     top: 9px;
 }
-
-#typora-sidebar .file-tree-node.active > .file-node-background {
-    border: none;
-}
-
 
 .file-library-node:not(.file-node-root):focus > .file-node-content {
     outline: none;
