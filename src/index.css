@@ -755,7 +755,7 @@ tt {
 }
 
 code {
-    padding: 0.2rem 0.4rem;
+    padding: 0.1rem 0.3rem;
     background-color: var(--borders);
     font-size: 0.9rem;
     border-radius: 0.2rem;
