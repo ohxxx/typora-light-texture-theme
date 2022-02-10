@@ -1346,12 +1346,29 @@ body.o #typora-sidebar .ty-search-item-line {
     border: none;
 }
 
+.file-node-background {
+  border: none !important;
+  width: auto !important;
+  left: 0.5rem;
+  right: 0.4rem;
+  border-radius: 0.3rem;
+}
+
 #typora-sidebar .file-tree-node.active .file-node-background,
 #typora-sidebar .file-list-item.active,
 #typora-sidebar .ty-search-item.active {
     background-color: var(--borders);
     color: var(--primary-color) !important;
-    border-left: 4px solid var(--primary-color)
+}
+
+#typora-sidebar .file-tree-node.active .file-node-background::after {
+  content: "";
+  position: absolute;
+  left: -0.5rem;
+  width: 0.28rem;
+  height: 2.2rem;
+  background: var(--primary-color);
+  border-radius: 0.3rem;
 }
 
 #typora-sidebar .file-tree-node.active .file-node-content {
