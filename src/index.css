@@ -214,12 +214,12 @@ h6 {
     margin-bottom: 0.5rem;
 }
 
-#write > h1.md-focus:before,
-#write > h2.md-focus:before,
-#write > h3.md-focus:before,
-#write > h4.md-focus:before,
-#write > h5.md-focus:before,
-#write > h6.md-focus:before {
+#write > h1:before,
+#write > h2:before,
+#write > h3:before,
+#write > h4:before,
+#write > h5:before,
+#write > h6:before {
     color: var(--light-text-color);
     border: none;
     position: absolute;
@@ -229,38 +229,38 @@ h6 {
     line-height: 1;
 }
 
-#write > h1.md-focus:before {
-    content: "h1";
+#write > h1:before {
+    content: "H1";
     top: 1.15rem;
     left: -1.75rem;
 }
 
-#write > h2.md-focus:before {
-    content: "h2";
+#write > h2:before {
+    content: "H2";
     top: 0.75rem;
     left: -1.75rem;
 }
 
-#write > h3.md-focus:before {
-    content: "h3";
+#write > h3:before {
+    content: "H3";
     top: 0.575rem;
     left: -1.75rem;
 }
 
-#write > h4.md-focus:before {
-    content: "h4";
+#write > h4:before {
+    content: "H4";
     top: 0.4rem;
     left: -1.75rem;
 }
 
-#write > h5.md-focus:before {
-    content: "h5";
+#write > h5:before {
+    content: "H5";
     top: 0.25rem;
     left: -1.75rem;
 }
 
-#write > h6.md-focus:before {
-    content: "h6";
+#write > h6:before {
+    content: "H6";
     top: 0.25rem;
     left: -1.75rem;
 }
@@ -414,6 +414,7 @@ table tr td:last-child {
 
 table tr td code {
   color: #c41d7f;
+  background: #F0E1ED;
 }
 
 /*******************************************
