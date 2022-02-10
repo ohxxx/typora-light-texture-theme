@@ -676,7 +676,7 @@ table tr td code {
     color: #56b6c2
 }
 
-.md-fences::before {
+.md-fences:before {
     content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDU0IDE0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+CiAgICAgICAgPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNGRjVGNTYiIHN0cm9rZT0iI0UwNDQzRSIgc3Ryb2tlLXdpZHRoPSIuNSI+PC9jaXJjbGU+CiAgICAgICAgPGNpcmNsZSBjeD0iMjYiIGN5PSI2IiByPSI2IiBmaWxsPSIjRkZCRDJFIiBzdHJva2U9IiNERUExMjMiIHN0cm9rZS13aWR0aD0iLjUiPjwvY2lyY2xlPgogICAgICAgIDxjaXJjbGUgY3g9IjQ2IiBjeT0iNiIgcj0iNiIgZmlsbD0iIzI3QzkzRiIgc3Ryb2tlPSIjMUFBQjI5IiBzdHJva2Utd2lkdGg9Ii41Ij48L2NpcmNsZT4KICAgIDwvZz4KPC9zdmc+');
     position: absolute;
     top: 10px;
@@ -1377,7 +1377,7 @@ body.o #typora-sidebar .ty-search-item-line {
     color: var(--primary-color) !important;
 }
 
-#typora-sidebar .file-tree-node.active .file-node-background::after {
+#typora-sidebar .file-tree-node.active .file-node-background:after {
   content: "";
   position: absolute;
   left: -0.5rem;
@@ -2009,34 +2009,31 @@ button.active,
 .search,
 .form-control,
 #file-library-search-input {
-    background-color: transparent !important;
+    background-color: var(--boxes) !important;
+    border: none !important;
     border-radius: 0.3rem !important;
-    border: solid 1px var(--boxes-darker) !important;
     box-shadow: none !important;
     color: var(---heading-text-color) !important;
     font-size: 0.9rem !important;
     font-weight: 400;
     padding: 0.7rem !important;
     height: 2rem;
-    transition-duration: 0.2s;
-    transition-property: border, box-shadow;
 }
 
 .search-input:hover,
 .search:hover,
 .form-control:hover,
 #file-library-search-input:hover {
-    border: solid 1px var(--boxes-darker2) !important;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04) !important;
+    background-color: var(--borders) !important;
+    box-shadow: none !important;
 }
 
 .search-input:focus,
 .search:focus,
 .form-control:focus,
 #file-library-search-input:focus {
-    background-color: transparent !important;
-    border-color: var(--primary-color) !important;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04) !important;
+    background-color: var(--boxes) !important;
+    box-shadow: none !important;
     color: var(--heading-text-color) !important;
     font-size: 0.9rem !important;
     padding: 0.7rem !important;
