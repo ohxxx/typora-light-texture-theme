@@ -1,26 +1,26 @@
 <!-- TITLE -->
 
-# 一级标题
+# ONE
 
-## 二级标题
+## TWO
 
-### 三级标题
+### THREE
 
-#### 四级标题
+#### FOUR
 
-##### 五级标题
+##### FIVE
 
-###### 六级标题
+###### SIX
 
 ---
 
 <!-- TABLE -->
 
-|  A  |  B   |  C   |
+|  TITLE-A  |  TITLE-B   |  TITLE-C   |
 | :--: | :--: | :--: |
-|  a1   |  b1 `xxx` \| `yyy`  |  c1   |
-|  a2  |  b2   |  c2  |
-|  a3   |  b3   |  c3   |
+|  A1   |  `B1-1` \| `B1-2`  |  C1   |
+|  A2  |  B2   |  C2  |
+|  A3   |  B3   |  `C3`   |
 
 ----
 
@@ -52,4 +52,19 @@ xxx()
     - Xxx
   - xxx
 - xxx
+
+----
+
+<!-- FONT STYLE -->
+
+**BOLD TEXT**
+*ITALIC TEXT*`
+***ITALIC BOLD TEXT***
+~~STRIKETHROUGH TEXT~~
+
+----
+
+<!-- QUOTED CONTENT -->
+
+> THIS IS A QUOTED CONTENT
 
