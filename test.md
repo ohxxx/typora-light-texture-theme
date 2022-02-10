@@ -58,7 +58,7 @@ xxx()
 <!-- FONT STYLE -->
 
 **BOLD TEXT**
-*ITALIC TEXT*`
+*ITALIC TEXT*
 ***ITALIC BOLD TEXT***
 ~~STRIKETHROUGH TEXT~~
 
@@ -68,3 +68,9 @@ xxx()
 
 > THIS IS A QUOTED CONTENT
 
+----
+
+<!-- IMAGE -->
+
+
+![IMAGE](https://avatars.githubusercontent.com/u/50434393?s=400&u=d795abf89250a2cfdbbe592c4fbc5776acc382cf&v=4 "IMAGE")
