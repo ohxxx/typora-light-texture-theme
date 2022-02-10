@@ -903,6 +903,21 @@ input[type="checkbox"]:checked:after {
     color: inherit;
 }
 
+
+p > .md-image:only-child:not(.md-img-error) img, 
+p > img:only-child {
+  border-radius: 0.5rem;
+}
+
+p > .md-image:only-child {
+  width: auto;
+}
+
+.md-image{
+    display: block;
+    border-radius: 0.5rem;
+}
+
 .md-tag {
     color: var(--md-char-color);
     opacity: 1;
