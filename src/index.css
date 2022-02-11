@@ -62,10 +62,6 @@ html,
     font-size: 16px;
 }
 
-kbd {
-    font-family: var(--font-family);
-}
-
 body {
     background: var(--bg-color);
     font-family: var(--font-family);
@@ -2685,6 +2681,16 @@ p[type="description"] {
     color: var(--light-text-color);
 }
 
+/*******************************************
+*                                          *
+*                   KBD                    *
+*                                          *
+*******************************************/
 kbd {
     font-family: var(--font-family);
+    color: var(--primary-color);
+    border: 0.1rem solid var(--primary-color);
+    border-radius: 0.3rem;
+    font-weight: 600;
+    box-shadow: none;
 }
