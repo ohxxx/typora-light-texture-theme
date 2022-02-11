@@ -985,10 +985,10 @@ p > .md-image:only-child {
 *                                          *
 *******************************************/
 .md-rawblock-container {
-    padding: 1rem;
     border-radius: 0.3rem;
     cursor: pointer;
     transition-duration: 0.2s;
+    background: transparent !important;
 }
 
 .md-rawblock:hover .md-rawblock-container {
@@ -997,6 +997,14 @@ p > .md-image:only-child {
 
 .md-rawblock:active .md-rawblock-container {
     background-color: var(--boxes-darker);
+}
+
+.md-rawblock > .md-rawblock-tooltip {
+  display: block !important;
+}
+
+.md-rawblock-tooltip {
+  left: 0;
 }
 
 .MathJax_SVG:focus {
@@ -1041,10 +1049,11 @@ p > .md-image:only-child {
     font-size: 13px;
     color: var(--light-text-color);
     opacity: 1;
+    padding-left: 0;
 }
 
 .md-rawblock-on-edit > .md-rawblock-tooltip {
-    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .md-rawblock-input span.cm-tag {

@@ -46,6 +46,12 @@ xxx()
 ```
 ----
 
+<!-- CODE -->
+
+<div style="background: #f5f7f9;  padding: 10px; border-radius: 5px">XXX</div>
+
+----
+
 <!-- CHECKBOX -->
 
 - [x] XXX
@@ -54,15 +60,32 @@ xxx()
 
 ----
 
+<!-- IMAGE -->
+
+
+![IMAGE](https://avatars.githubusercontent.com/u/50434393?s=400&u=d795abf89250a2cfdbbe592c4fbc5776acc382cf&v=4 "IMAGE")
+
+----
+
+
 <!-- UNORDERED LIST -->
 
-- xxx
-- xxx
-  - xxx
-    - xxx
-    - Xxx
-  - xxx
-- xxx
+- XXX
+- XXX
+  - XXX
+    - XXX
+  - XXX
+- XXX
+
+----
+
+<!-- ORDERED LIST -->
+
+1. XXX1
+2. XXX2
+   1. XXX2-1
+3. XXX3
+
 
 ----
 
@@ -75,8 +98,3 @@ xxx()
 
 ----
 
-
-<!-- IMAGE -->
-
-
-![IMAGE](https://avatars.githubusercontent.com/u/50434393?s=400&u=d795abf89250a2cfdbbe592c4fbc5776acc382cf&v=4 "IMAGE")
