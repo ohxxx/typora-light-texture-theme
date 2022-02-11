@@ -49,6 +49,7 @@
     --note-fill: #fff5ad;
     --note-border: #aaaa33;
 
+    --temp-type-hint-color: #CED4DA;
 
     --font-family: "Roboto", sans-serif;
     --code-font-family: "Source Code Pro";
@@ -220,7 +221,7 @@ h6 {
 #write > h4:before,
 #write > h5:before,
 #write > h6:before {
-    color: var(--light-text-color);
+    color: var(--temp-type-hint-color);
     border: none;
     position: absolute;
     font-size: 0.9rem;
@@ -231,38 +232,32 @@ h6 {
 
 #write > h1:before {
     content: "H1";
-    top: 1.15rem;
-    left: -1.75rem;
+    top: -0.8rem;
 }
 
 #write > h2:before {
     content: "H2";
-    top: 0.75rem;
-    left: -1.75rem;
+    top: -0.82rem;
 }
 
 #write > h3:before {
     content: "H3";
-    top: 0.575rem;
-    left: -1.75rem;
+    top: -0.84rem;
 }
 
 #write > h4:before {
     content: "H4";
-    top: 0.4rem;
-    left: -1.75rem;
+    top: -0.86rem;
 }
 
 #write > h5:before {
     content: "H5";
-    top: 0.25rem;
-    left: -1.75rem;
+    top: -0.88rem;
 }
 
 #write > h6:before {
     content: "H6";
-    top: 0.25rem;
-    left: -1.75rem;
+    top: -0.9rem;
 }
 
 h1:first-child,
