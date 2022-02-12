@@ -10,7 +10,8 @@
   --primary-color-lighter: #E7F2FF;
 
   --borders: #DBE2EF; /* key */
-  --borders-lighter: #FAFBFC;
+  --borders-lighter: #EDF0F7;
+  --borders-lighter2: #FAFBFC;
   --table-border-color: #DBE2EF;
   --boxes: #F9F7F7; /* key */
   --boxes-darker: #d8e0e7;
@@ -18,6 +19,7 @@
   --boxes-darkest: #9daab6;
 
   --text-color: #3b454e;
+  --text-gray-color: #E6E6E6;
   --heading-text-color: #242a31;
   --light-text-color: #9daab6;
   --light-text-color-darker: #74818d;
@@ -29,6 +31,15 @@
   --fences-path-color: #666666;
   --highlight-code-color: #c41d7f;
   --highlight-code-bg-color: #F0E1ED;
+
+  --code-red-color: #FF75B5;
+  --code-yellow-color: #FFB86C;
+  --code-cyan-color: #19f9d8;
+  --code-blue-color: #6FC1FF;
+  --code-purple-color: #FF75B5;
+  --code-orange-color: #FFB86C;
+  --code-green-color: #19f9d8;
+  --code-grey-color: hsl(220, 9%, 55%);
 
 
   /* BASE */
@@ -421,7 +432,7 @@ table tr td {
 
 #write table tr td:hover,
 #write table tr th:hover {
-  background-color: var(--borders);
+  background-color: var(--borders-lighter);
 }
 
 table tr th:first-child,
@@ -567,135 +578,167 @@ table tr td code {
   color: var(--danger-color);
 }
 
-.cm-s-inner span.cm-header {
-  color: #e06c75
+.cm-s-inner .cm-property {
+  color: var(--code-blue-color) !important;
 }
 
-.cm-s-inner span.cm-quote {
-  color: #5c6370;
-  font-style: italic
+.cm-s-inner .cm-operator {
+  color: var(--code-cyan-color) !important;
 }
 
-.cm-s-inner span.cm-negative {
-  color: #e06c75
+.cm-s-inner .cm-keyword {
+  color: var(--code-purple-color) !important;
 }
 
-.cm-s-inner span.cm-positive {
-  color: #e06c75
+.cm-s-inner .cm-tag {
+  color: var(--code-red-color) !important;
 }
 
-.cm-s-inner span.cm-strong {
-  color: #d19a66;
-  font-weight: 700
+.cm-s-inner .cm-attribute {
+  color: var(--code-orange-color) !important;
 }
 
-.cm-s-inner span.cm-header .cm-strong {
-  color: #d19a66;
-  font-weight: 700
+.cm-s-inner .cm-string {
+  color: var(--code-green-color) !important;
 }
 
-.cm-s-inner span.cm-em {
-  color: #c678dd;
-  font-style: italic
+.cm-s-inner .cm-comment,
+.cm-s-inner.cm-comment {
+  color: var(--code-grey-color) !important;
 }
 
-.cm-s-inner span.cm-header .cm-em {
-  color: #c678dd;
-  font-style: italic
+.cm-s-inner .cm-header,
+.cm-s-inner .cm-def,
+.cm-s-inner.cm-header,
+.cm-s-inner.cm-def {
+  color: var(--code-blue-color) !important;
 }
 
-.cm-s-inner span.cm-tag {
-  color: #e06c75
+.cm-s-inner .cm-meta,
+.cm-s-inner .cm-qualifier {
+  color: var(--code-red-color) !important;
 }
 
-.cm-s-inner span.cm-attribute {
-  color: #d19a66
+.cm-s-inner .cm-builtin {
+  color: var(--code-cyan-color) !important;
 }
 
-.cm-s-inner span.cm-link {
-  color: #98c379;
-  border-bottom: solid 1px #98c379
+.cm-s-inner .cm-bracket {
+  color: var(--text-gray-color) !important;
 }
 
-.cm-s-inner span.cm-builtin {
-  color: #e06c75
+.cm-s-inner .cm-number {
+  color: var(--code-orange-color) !important;
 }
 
-.cm-s-inner span.cm-keyword {
-  color: #c678dd
+.cm-s-inner .cm-variable {
+  color: var(--text-gray-color) !important;
 }
 
-.cm-s-inner span.cm-def {
-  color: #e5c07b
+.cm-s-inner .cm-variable-2 {
+  color: var(--code-yellow-color) !important;
 }
 
-.cm-s-inner span.cm-atom {
-  color: #d19a66
+.cm-s-typora-default .cm-property {
+  color: var(--code-red-color) !important;
 }
 
-.cm-s-inner span.cm-number {
-  color: #d19a66
+.cm-s-typora-default .cm-string {
+  color: var(--code-purple-color);
 }
 
-.cm-s-inner span.cm-property {
-  color: #56b6c2
+.cm-s-typora-default .cm-atom {
+  color: var(--code-grey-color);
 }
 
-.cm-s-inner span.cm-qualifier {
-  color: #d19a66
+.cm-s-typora-default .cm-number {
+  color: var(--code-orange-color);
+  font-style: normal !important;
 }
 
-.cm-s-inner span.cm-variable {
-  color: #e06c75
+.cm-s-typora-default .cm-link {
+  color: var(--code-blue-color);
 }
 
-.cm-s-inner span.cm-string {
-  color: #98c379
+.cm-s-typora-default .CodeMirror-activeline-background {
+  background: var(--hover-bg-color1);
 }
 
-.cm-s-inner span.cm-punctuation {
-  color: #abb2bf
+.cm-s-typora-default .cm-comment,
+.cm-s-typora-default .cm-code {
+  color: var(--code-purple-color);
 }
 
-.cm-s-inner span.cm-operator {
-  color: #56b6c2
+.cm-s-typora-default .cm-tag {
+  color: var(--code-blue-color);
 }
 
-.cm-s-inner span.cm-meta {
-  color: #abb2bf
+.cm-s-typora-default .cm-strong,
+.cm-s-typora-default .cm-em,
+.cm-s-typora-default .cm-del {
+  color: var(--code-orange-color);
 }
 
-.cm-s-inner span.cm-bracket {
-  color: #abb2bf
+.cm-s-typora-default .cm-block-start.cm-variable-2 {
+  color: var(--code-red-color);
 }
 
-.cm-s-inner span.cm-comment {
-  color: #5c6370;
-  font-style: italic
+.cm-formatting-task .cm-formatting-task {
+  color: var(--code-red-color);
 }
 
-.cm-s-inner span.cm-error {
-  color: #e06c75
+.cm-s-inner .cm-atom,
+.cm-s-inner.cm-atom {
+  color: var(--code-blue-color);
 }
 
-.cm-s-inner span.cm-m-css.cm-variable {
-  color: #828997
+.cm-s-typora-default .cm-comment {
+  color: var(--code-green-color);
 }
 
-.cm-s-inner span.cm-m-css.cm-property {
-  color: #abb2bf
+.cm-s-inner .cm-hr {
+  color: var(--text-gray-color);
 }
 
-.cm-s-inner span.cm-m-css.cm-atom {
-  color: #56b6c2
+.cm-s-inner .cm-variable-3 {
+  color: var(--code-purple-color);
 }
 
-.cm-s-inner span.cm-m-css.cm-builtin {
-  color: #56b6c2
+.cm-s-inner .cm-quote,
+.cm-s-inner.cm-quote {
+  color: var(--code-green-color);
 }
 
-.cm-s-inner span.cm-m-lua.cm-variable {
-  color: #56b6c2
+.cm-s-inner .cm-link {
+  color: var(--code-blue-color);
+}
+
+.cm-s-inner .cm-negative {
+  color: #d95050;
+}
+
+.cm-s-inner .cm-positive {
+  color: #50e650;
+}
+
+.cm-s-inner .cm-string-2 {
+  color: #f50;
+}
+
+.CodeMirror-gutters {
+  border-right: none;
+}
+
+.on-focus-mode .md-end-block:not(.md-focus) .md-toc-item {
+  opacity: 0.5;
+}
+
+.on-focus-mode #write h1:not(.md-focus):before {
+  opacity: 0.5;
+}
+
+.on-focus-mode #write h2:not(.md-focus):before {
+  opacity: 0.5;
 }
 
 .md-fences:before {
@@ -918,17 +961,17 @@ g.classGroup line {
 
 .stateGroup rect, 
 .stateGroup line {
-  fill: var(--borders-lighter) !important;
+  fill: var(--borders-lighter2) !important;
   stroke: var(--primary-color) !important;
 }
 
 .stateGroup circle {
-  fill: var(--borders-lighter) !important;
+  fill: var(--borders-lighter2) !important;
   stroke: var(--primary-color) !important;
 }
 
 .statediagram-cluster .outer {
-  fill: var(--borders-lighter) !important;
+  fill: var(--borders-lighter2) !important;
   stroke: var(--primary-color) !important;
 }
 
@@ -941,7 +984,7 @@ g.classGroup line {
 }
 
 rect.er.entityBox {
-  fill: var(--borders-lighter) !important;
+  fill: var(--borders-lighter2) !important;
   stroke: var(--primary-color) !important;
 }
 
