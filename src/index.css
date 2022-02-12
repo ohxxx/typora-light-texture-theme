@@ -804,8 +804,8 @@ code {
 *******************************************/
 .md-diagram-panel {
     color: var(--text-color);
-    border: solid 1px var(--borders);
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: var(--bg-color);
 }
 
 .md-diagram-panel text,
@@ -819,6 +819,10 @@ code {
 
 .md-diagram-panel-error {
     color: var(--danger-color);
+}
+
+#write pre.ty-contain-cm {
+  background-color: var(--code-boxes)
 }
 
 /*******************************************
