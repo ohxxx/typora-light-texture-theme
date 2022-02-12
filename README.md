@@ -4,7 +4,7 @@ Good-looking themes inspire us to write and inspire us to learn.
 
 ## Why
 
-Why is it called xxx theme ???
+Why is it called xxx theme ???  
 Because I haven't figured out the name of the theme yet ~~~
 
 ## Install
