@@ -9,7 +9,7 @@ Because I haven't figured out the name of the theme yet ~~~
 
 ## Install
 
-1. [`Download theme pack.`](https://github.com/xxxDeveloper/typora-theme/releases/download/v1.0.0/xxx-theme.zip)
+1. [`Download theme pack.`](https://github.com/xxxDeveloper/typora-xxx-theme/releases/download/v1.0.1/xxx-theme-v1.0.1.zip)
 2. Unzip the xxx theme package into the typora theme package.
 3. Select xxx theme in typora.
 
