@@ -941,19 +941,6 @@ p > .md-image:only-child {
     opacity: 1;
 }
 
-/*******************************************
-*                                          *
-*                UL LI LIST                *
-*                                          *
-*******************************************/
-/* TODO: */
-.ul-list {
-
-}
-
-.md-list-item {
-
-}
 
 /*******************************************
 *                                          *
@@ -988,6 +975,25 @@ p > .md-image:only-child {
     padding: 0px;
 }
 
+.md-toc-h2 .md-toc-inner {
+    margin-left: 1em;
+}
+
+.md-toc-h3 .md-toc-inner {
+    margin-left: 2em;
+}
+
+.md-toc-h4 .md-toc-inner {
+    margin-left: 3em;
+}
+
+.md-toc-h5 .md-toc-inner {
+    margin-left: 4em;
+}
+
+.md-toc-h6 .md-toc-inner {
+    margin-left: 5em;
+}
 
 /*******************************************
 *                                          *
