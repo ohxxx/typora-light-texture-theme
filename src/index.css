@@ -1,33 +1,21 @@
 @import url(./fonts/index.css);
 
 :root {
+  
+  /* VARIABLE */
   --bg-color: white;
   --side-bar-bg-color: white;
-  --control-text-color: #3b454e;
-  --primary-color: #3884ff;
+
+  --primary-color: #2666CF; /* key */
   --primary-color-lighter: #E7F2FF;
-  --primary-btn-border-color: #3884ff;
-  --active-file-bg-color: #e6ecf1;
-  --active-file-text-color: inherit;
-  --active-file-border-color: #3884ff;
-  --item-hover-text-color: #242a31;
-  --item-hover-bg-color: #f5f7f9;
-  --window-border: 1px solid #e6ecf1;
-  --select-text-font-color: white;
-  --select-text-bg-color: #1968e6;
 
-  --md-char-color: #9daab6;
-  --heading-char-color: #9daab6;
-  --meta-content-color: #3884ff;
-
-  --borders: #e6ecf1;
+  --borders: #DBE2EF; /* key */
   --borders-lighter: #FAFBFC;
-  --table-border-color: #e6ecf1;
-  --boxes: #f5f7f9;
+  --table-border-color: #DBE2EF;
+  --boxes: #F9F7F7; /* key */
   --boxes-darker: #d8e0e7;
   --boxes-darker2: #bac2c9;
   --boxes-darkest: #9daab6;
-  --drag-placeholder-color: #d8e0e7;
 
   --text-color: #3b454e;
   --heading-text-color: #242a31;
@@ -37,10 +25,34 @@
   --code-boxes-lighter: #1c375f;
   --rawblock-edit-panel-bd: transparent;
 
+  --temp-type-hint-color: #CED4DA;
+  --fences-path-color: #666666;
+  --highlight-code-color: #c41d7f;
+  --highlight-code-bg-color: #F0E1ED;
+
+
+  /* BASE */
+  --control-text-color: #3b454e;
+  --primary-btn-border-color: #2666CF;
+  --active-file-bg-color: #DBE2EF;
+  --active-file-text-color: inherit;
+  --active-file-border-color: #2666CF;
+  --item-hover-text-color: #242a31;
+  --item-hover-bg-color: #F9F7F7;
+  --window-border: 1px solid #DBE2EF;
+  --select-text-font-color: white;
+  --select-text-bg-color: #1968e6;
+
+  --md-char-color: #9daab6;
+  --heading-char-color: #9daab6;
+  --meta-content-color: #2666CF;
+
+  --drag-placeholder-color: #d8e0e7;
+  
   --primary-color-darkest: #001f50;
   --primary-color-darker2: #00307c;
   --primary-color-darker: #1968e6;
-  --focus-ring-color: #3884ff;
+  --focus-ring-color: #2666CF;
 
   --danger-color: rgb(255, 70, 66);
 
@@ -51,15 +63,9 @@
   --note-fill: #fff5ad;
   --note-border: #aaaa33;
 
-  --temp-type-hint-color: #CED4DA;
-
   --font-family: "Roboto", sans-serif;
   --code-font-family: "Source Code Pro";
   --monospace: "Source Code Pro";
-
-  --fences-path-color: #666666;
-  --highlight-code-color: #c41d7f;
-  --highlight-code-bg-color: #F0E1ED;
 }
 
 html,
@@ -95,7 +101,6 @@ body {
 
 a {
   color: var(--primary-color);
-  text-decoration: none !important;
   transition-duration: 0.2s;
   transition-property: color;
 }
@@ -174,7 +179,7 @@ h1 {
   margin-top: 3rem;
   margin-bottom: 0.5rem;
   padding-bottom: 0.2rem;
-  border-bottom: solid 1px var(--borders);
+  border-bottom: 1px solid var(--primary-color);
 }
 
 h2 {
@@ -301,13 +306,14 @@ li>ul {
 }
 
 hr {
-  height: 1px;
+  height: 2px;
   padding: 0;
-  margin: 16px 0;
-  background-color: var(--borders);
+  margin: 25px 0;
+  background-color: var(--primary-color);
   border: 0 none;
   overflow: hidden;
   box-sizing: content-box;
+  border-radius: 2px;
 }
 
 li p.first {
@@ -353,7 +359,7 @@ blockquote {
   padding: 1rem;
   position: relative;
   margin-left: 0.6rem;
-  background: var(--borders);
+  background: rgba(218, 226, 240, 0.5)
 }
 
 blockquote::after {
@@ -365,10 +371,6 @@ blockquote::after {
   height: 100%;
   background: var(--primary-color);
   border-radius: 0.5rem;
-}
-
-blockquote blockquote {
-  padding-right: 0;
 }
 
 /*******************************************
@@ -1794,8 +1796,9 @@ body.html-for-mac .file-tree-node:not(.file-node-root):not(.file-node-expanded) 
 *                                          *
 *******************************************/
 #md-notification {
-  border-bottom: solid 1px var(--borders);
-  box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-color) !important;
+  padding: 0 0.5rem;
 }
 
 #md-notifcation .btn {
