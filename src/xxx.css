@@ -377,9 +377,9 @@ blockquote::after {
   content: "";
   position: absolute;
   left: -0.6rem;
-  top: 0rem;
+  top: 0.4rem;
   width: 0.28rem;
-  height: 100%;
+  height: calc(100% - 0.8rem);
   background: var(--primary-color);
   border-radius: 0.5rem;
 }
@@ -1256,6 +1256,10 @@ sup.md-footnote {
   outline: none;
 }
 
+mjx-container[jax="SVG"][display="true"] {
+  text-align: left !important;
+}
+
 .md-rawblock-panel,
 .md-rawblock-control:not(.md-rawblock-tooltip) {
   border-radius: 0.3rem;
@@ -1642,9 +1646,10 @@ body.o #typora-sidebar .ty-search-item-line {
 #typora-sidebar .file-tree-node.active .file-node-background:after {
   content: "";
   position: absolute;
+  top: 0.2rem;
   left: -0.5rem;
   width: 0.28rem;
-  height: 2.2rem;
+  height: 1.8rem;
   background: var(--primary-color);
   border-radius: 0.5rem;
 }
