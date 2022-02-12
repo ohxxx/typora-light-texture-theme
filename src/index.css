@@ -991,6 +991,35 @@ p > .md-image:only-child {
 
 /*******************************************
 *                                          *
+*                 FOOTNOTE                 *
+*                                          *
+*******************************************/
+sup.md-footnote {
+    background-color: var(--borders);
+    border-radius: 0.3rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.md-hover-tip .code-tooltip-content {
+    margin-top: 0px;
+    border-radius: 0.5rem;
+    line-height: 1
+}
+
+.code-tooltip.md-hover-tip,
+.code-tooltip.md-hover-tip .md-arrow:after {
+    background-color: var(--code-boxes);
+    color: var(--boxes);
+}
+
+.code-tooltip.md-hover-tip .md-arrow:after {
+    box-shadow: none;
+    top: 2px;
+}
+
+/*******************************************
+*                                          *
 *                   MATH                   *
 *                                          *
 *******************************************/
