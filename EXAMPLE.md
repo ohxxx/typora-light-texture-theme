@@ -186,7 +186,7 @@ stateDiagram
 
 ### IMAGE
 
-<img src="https://avatars.githubusercontent.com/u/50434393?s=400&u=d795abf89250a2cfdbbe592c4fbc5776acc382cf&v=4" alt="AVATARS" style="zoom:30%;" />
+<img src="https://avatars.githubusercontent.com/u/50434393?s=400&u=d795abf89250a2cfdbbe592c4fbc5776acc382cf&v=4" alt="AVATARS" style="zoom:1-00%;" />
 
 ### VIDEO
 
@@ -199,6 +199,30 @@ stateDiagram
 ## OTHER
 
 [^FN]: This is a **FN** Footnote
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
