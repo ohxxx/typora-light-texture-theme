@@ -229,31 +229,41 @@ h6 {
 #write > h1:before {
     content: "H1";
     top: -0.8rem;
+    left: 0;
 }
 
 #write > h2:before {
     content: "H2";
     top: -0.82rem;
+    left: 0;
 }
 
 #write > h3:before {
     content: "H3";
     top: -0.84rem;
+    left: 0;
 }
 
 #write > h4:before {
     content: "H4";
     top: -0.86rem;
+    left: 0;
 }
 
 #write > h5:before {
     content: "H5";
     top: -0.88rem;
+    left: 0;
 }
 
 #write > h6:before {
     content: "H6";
     top: -0.9rem;
+    left: 0;
+}
+
+.md-rawblock{
+  margin-top: 2rem;
 }
 
 h1:first-child,
@@ -337,7 +347,7 @@ blockquote {
     padding: 1rem;
     position: relative;
     margin-left: 0.6rem;
-    background: rgba(230, 236, 241, 0.35)
+    background: var(--borders);
 }
 
 blockquote::after {
@@ -996,11 +1006,13 @@ p > .md-image:only-child {
 }
 
 .md-rawblock > .md-rawblock-tooltip {
-  display: block !important;
+    display: block !important;
+    padding: 0;
 }
 
 .md-rawblock-tooltip {
-  left: 0;
+    top: -22px;
+    left: 0;
 }
 
 .MathJax_SVG:focus {
@@ -2011,6 +2023,16 @@ button.active,
 .md-image-pick-file-btn {
     border-left: none;
     border-radius: 0rem 0.3rem 0.3rem 0rem !important;
+}
+
+/*******************************************
+*                                          *
+*                 VIDEO                    *
+*                                          *
+*******************************************/
+video {
+  margin: 0;
+  border-radius: 0.5rem;
 }
 
 /*******************************************
