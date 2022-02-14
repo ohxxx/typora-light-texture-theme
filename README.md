@@ -1,11 +1,12 @@
-# Typora XXX Theme
+# Typora Light-Texture Theme
 
-Good-looking themes inspire us to write and inspire us to learn.
+A good-looking theme will arouse our desire to write and motivate us to learn.
 
-## Why
+English |	[`中文`](./REDME_CN.md)
 
-Why is it called xxx theme ???  
-Because I haven't figured out the name of the theme yet ~~~
+## What
+
+A light textured typora theme, simplicity is not easy.
 
 ## Install
 
@@ -26,7 +27,7 @@ Because I haven't figured out the name of the theme yet ~~~
 
 ## Reference
 
-This project references the following projects
+This project references the following projects：
 
  - [`typora-gitbook-theme`](https://github.com/h16nning/typora-gitbook-theme)
  - [`typora-panda-theme`](https://github.com/gilbertohasnofb/typora-panda-theme)
