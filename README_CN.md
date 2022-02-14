@@ -2,7 +2,7 @@
 
 一款好看的主题会激起我们的写作欲望和激励我们学习
 
-[`English`](REDME.md) |	中文
+[`English`](./REDME.md) |	中文
 
 ## 什么
 

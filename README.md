@@ -11,8 +11,8 @@ A light textured typora theme, simplicity is not easy.
 ## Install
 
 1. [`Download theme pack.`](https://github.com/xxxDeveloper/typora-xxx-theme/releases/download/v1.0.1/xxx-theme-v1.0.1.zip)
-2. Unzip the xxx theme package into the typora theme package.
-3. Select xxx theme in typora.
+2. Unzip the Light Texture theme package into the typora theme package.
+3. Select Light Texture theme in typora.
 
 
 ## Screenshots
