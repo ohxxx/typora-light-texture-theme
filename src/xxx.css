@@ -3,8 +3,10 @@
 :root {
   
   /* VARIABLE */
-  --bg-color: white;
-  --side-bar-bg-color: white;
+  --base-color: white;
+  --base-box-shadow: 0 0 24px rgba(0, 0, 0, 0.04);
+  --bg-color: #F8F9FD;
+  --side-bar-bg-color: #F8F9FD;
 
   --primary-color: #2666CF; /* key */
   --primary-color-lighter: #E7F2FF;
@@ -94,20 +96,71 @@ body {
   height: 100%;
 }
 
+content {
+  background: #F8F9FD !important;
+}
+
 #write {
   font-size: 0.95rem;
   max-width: 950px;
   margin: 0 auto;
   margin-top: 1rem;
-  padding: 30px;
+  padding: 60px;
   padding-bottom: 100px;
   position: static;
   width: 100%;
+  background-color: var(--base-color);
+  border-radius: 0.8rem;
+  box-shadow: var(--base-box-shadow)
 }
 
 #write>ul:first-child,
 #write>ol:first-child {
   margin-top: 30px;
+}
+
+#typora-sidebar:hover #file-library-tree {
+  padding-bottom: 20px !important;
+}
+
+.ty-tab-wrapper {
+  margin: 15px 15px 0px 15px;
+  border-radius: 0.6rem;
+  box-shadow: var(--base-box-shadow);
+  background-color: var(--base-color) !important;
+}
+
+.sidebar-tabs {
+  border: none;
+}
+
+.ty-icon.ty-list,
+.ty-icon.ty-file-tree {
+  line-height: 40px;
+}
+
+#sidebar-search-btn {
+  margin-top: 1px;
+}
+
+#file-library-tree {
+  background: white;
+  border-radius: 0.8rem;
+  margin: 15px;
+  min-width: calc(100% - 30px);
+  padding: 20px 10px;
+  height: calc(100% - 30px);
+  box-shadow: var(--base-box-shadow);
+  overflow: hidden;
+}
+
+.outline-content {
+  min-width: calc(100% - 30px);
+  padding: 20px 10px;
+  background-color: var(--base-color);
+  border-radius: 0.8rem;
+  box-shadow: var(--base-box-shadow);
+  margin: 15px;
 }
 
 a {
@@ -508,7 +561,7 @@ table tr td code {
 }
 
 .md-grid-board tr[row="1"] td {
-  background-color: var(--bg-color);
+  background-color: var(--base-color);
   border-color: var(--borders);
 }
 
@@ -570,7 +623,7 @@ table tr td code {
 }
 
 .CodeMirror-linenumber {
-  color: var(--bg-color);
+  color: var(--base-color);
   opacity: 0.6;
 }
 
@@ -768,7 +821,7 @@ table tr td code {
   box-shadow: rgba(116, 129, 141, 0.08) 0px 2px 6px 0px;
   border: solid 1px var(--borders);
   border-radius: 0.3rem;
-  background-color: var(--bg-color);
+  background-color: var(--base-color);
   color: var(--text-color);
   width: 15rem;
   bottom: -3rem;
@@ -1003,7 +1056,7 @@ circle {
 .md-diagram-panel {
   color: var(--text-color);
   border-radius: 0.5rem;
-  background-color: var(--bg-color);
+  background-color: var(--base-color);
 }
 
 .md-diagram-panel text,
@@ -1328,7 +1381,7 @@ mjx-container[jax="SVG"][display="true"] {
 
 #math-inline-preview.code-tooltip {
   border-radius: 0.3rem;
-  background-color: var(--bg-color);
+  background-color: var(--base-color);
   box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
   color: var(--text-color);
   opacity: 1;
@@ -1339,7 +1392,7 @@ mjx-container[jax="SVG"][display="true"] {
 }
 
 #math-inline-preview.code-tooltip .md-arrow:after {
-  background-color: var(--bg-color);
+  background-color: var(--base-color);
   border: solid 1px var(--borders);
   box-shadow: none;
 }
@@ -1466,8 +1519,7 @@ footer.ty-footer {
 }
 
 #outline-content {
-  padding-right: 0px;
-  line-height: 1rem;
+  line-height: 1.2rem;
 }
 
 .outline-item {
@@ -1500,9 +1552,20 @@ footer.ty-footer {
 }
 
 .outline-active.outline-label {
-  border-right: solid 2px var(--primary-color);
+  position: relative;
   font-weight: 500;
   color: var(--primary-color);
+}
+
+.outline-active.outline-label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 0.28rem;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 0.3rem;
 }
 
 .outline-expander {
@@ -1641,6 +1704,7 @@ body.o #typora-sidebar .ty-search-item-line {
 #typora-sidebar .ty-search-item.active {
   background-color: var(--borders);
   color: var(--primary-color) !important;
+  z-index: 1;
 }
 
 #typora-sidebar .file-tree-node.active .file-node-background:after {
@@ -1671,6 +1735,8 @@ body.o #typora-sidebar .ty-search-item-line {
   height: 2.2rem;
   background: none;
   margin-bottom: 0px;
+  position: relative;
+  z-index: 2;
 }
 
 #typora-sidebar .file-tree-node .file-node-background {
@@ -1721,7 +1787,7 @@ body.o #typora-sidebar .ty-search-item-line {
 }
 
 #typora-sidebar #ty-sidebar-footer {
-  background-color: var(--bg-color);
+  background-color: var(--base-color);
   border-top: solid 1px var(--borders);
   font-weight: 500;
 }
@@ -2040,7 +2106,7 @@ body.html-for-mac .file-tree-node:not(.file-node-root):not(.file-node-expanded) 
 *******************************************/
 .dropdown-menu:not(.megamenu-menu-list),
 .auto-suggest-container {
-  background-color: var(--bg-color);
+  background-color: var(--base-color);
   border: solid 1px var(--borders) !important;
   box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
   user-select: none;
@@ -2437,7 +2503,7 @@ html select,
 html input[type="text"],
 html input[type="number"],
 #md-grid-height {
-  background-color: var(--bg-color) !important;
+  background-color: var(--base-color) !important;
   border-radius: 0.3rem !important;
   border: solid 1px var(--boxes-darker) !important;
   box-shadow: none !important;
@@ -2464,7 +2530,7 @@ html select:hover,
 html input[type="text"]:hover,
 html input[type="number"]:hover,
 #md-grid-height:hover {
-  background-color: var(--bg-color) !important;
+  background-color: var(--base-color) !important;
   border-radius: 0.3rem !important;
   border-color: var(--boxes-darker2) !important;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04) !important;
@@ -2580,7 +2646,7 @@ textarea:focus {
 *                                          *
 *******************************************/
 .ty-tooltip {
-  background-color: var(--bg-color) !important;
+  background-color: var(--base-color) !important;
   border-radius: 0.3rem !important;
   border: 1px solid var(--borders) !important;
   -webkit-filter: none !important;
@@ -2717,12 +2783,12 @@ textarea:focus {
 }
 
 .megamenu-opened header {
-  background-color: var(--bg-color);
+  background-color: var(--base-color);
   background-image: none;
 }
 
 .megamenu-content {
-  background-color: var(--bg-color);
+  background-color: var(--base-color);
   background-image: none;
 }
 
@@ -2869,7 +2935,7 @@ textarea:focus {
 }
 
 .theme-preview-div .fa-check-circle:before {
-  background-color: var(--bg-color);
+  background-color: var(--base-color);
   padding: 0px 2px;
   border-radius: 1rem;
 }
