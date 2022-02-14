@@ -10,7 +10,7 @@
 
 ## 安装
 
-1. [`下载主题包`](https://github.com/xxxDeveloper/typora-xxx-theme/releases/download/v1.0.1/xxx-theme-v1.0.1.zip)
+1. [`下载主题包`](https://github.com/xxxDeveloper/typora-light-texture-theme/releases/download/v1.0.2/LightTexture.zip)
 2. 将Light Texture主题包解压到typora主题包中
 3. 在typora中选择Light Texture主题
 
