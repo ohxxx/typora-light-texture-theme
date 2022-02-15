@@ -2,7 +2,7 @@
 
 A good-looking theme will arouse our desire to write and motivate us to learn.
 
-English |	[`中文`](./REDME_CN.md)
+English |	[`中文`](./README_CN.md)
 
 ## What
 
