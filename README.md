@@ -1,21 +1,21 @@
-# Typora Light-Texture Theme
+# 轻质感Typora主题
 
-A good-looking theme will arouse our desire to write and motivate us to learn.
+一款好看的主题会激起我们的写作欲望和激励我们学习
 
-English |	[`中文`](./README_CN.md)
+中文 | [`English`](./README_EN.md)
 
-## What
+## 什么
 
-A light textured typora theme, simplicity is not easy.
+一个轻质感的typora主题，简约而不简单
 
-## Install
+## 安装
 
-1. [`Download theme pack.`](https://github.com/xxxDeveloper/typora-light-texture-theme/releases/download/v1.0.2/LightTexture.zip)
-2. Unzip the Light Texture theme package into the typora theme package.
-3. Select Light Texture theme in typora.
+1. [`下载主题包`](https://github.com/xxxDeveloper/typora-light-texture-theme/releases/download/v1.0.2/LightTexture.zip)
+2. 将Light Texture主题包解压到typora主题包中
+3. 在typora中选择Light Texture主题
 
 
-## Screenshots
+## 截图
 
 ![Screenshot-1](asses/Screenshot-1.png)
 ![Screenshot-2](asses/Screenshot-2.png)
@@ -25,9 +25,9 @@ A light textured typora theme, simplicity is not easy.
 ![Screenshot-6](asses/Screenshot-6.png)
 ![Screenshot-7](asses/Screenshot-7.png)
 
-## Reference
+## 参考
 
-This project references the following projects：
+本项目参考以下项目：
 
  - [`typora-gitbook-theme`](https://github.com/h16nning/typora-gitbook-theme)
  - [`typora-panda-theme`](https://github.com/gilbertohasnofb/typora-panda-theme)
